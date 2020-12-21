@@ -29,6 +29,7 @@ public class GroupController {
         this.view = view;
         this.model = model;
         model.addObservers(view);
+        view.setTriggers(this);
     }
 
     /**

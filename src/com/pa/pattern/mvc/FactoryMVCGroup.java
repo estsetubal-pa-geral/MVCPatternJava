@@ -11,7 +11,6 @@ public class FactoryMVCGroup {
         Group model = new Group("PA-123");
         GroupUI view = new GroupUI(model);
         GroupController controller = new GroupController(view, model);
-        view.setTriggers(controller);
         return view;
     }
 }
